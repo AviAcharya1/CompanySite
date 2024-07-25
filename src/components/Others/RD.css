@@ -1,0 +1,109 @@
+/* R&D.css */
+.rd-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .rd-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .rd-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .rd-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-item {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .stat-item h2 {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  .rd-patent-portfolio,
+  .rd-capabilities,
+  .rd-technology,
+  .rd-journey,
+  .rd-platform-technology,
+  .rd-dosage-forms {
+    margin-bottom: 2rem;
+  }
+  
+  .patent-grid,
+  .technology-grid,
+  .dosage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .patent-item {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .patent-item h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .journey-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tab-button {
+    padding: 0.5rem 1rem;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tab-button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .journey-content {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .technology-grid > div,
+  .dosage-grid > div {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .rd-stats,
+    .patent-grid,
+    .technology-grid,
+    .dosage-grid {
+      grid-template-columns: 1fr;
+    }
+  }

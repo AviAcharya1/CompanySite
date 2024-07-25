@@ -1,0 +1,80 @@
+/* components/NotFound/NotFound.css */
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .not-found-content {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .not-found-title {
+    font-size: 6rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .not-found-animation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 10px;
+    animation: bounce 0.5s ease-in-out infinite alternate;
+  }
+  
+  .circle:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .circle:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .not-found-message {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .not-found-submessage {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .not-found-home-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .not-found-home-link:hover {
+    background-color: #0056b3;
+  }
